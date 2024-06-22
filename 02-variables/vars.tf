@@ -24,7 +24,7 @@ output "l" {
 #second value in list
 
 output "lsecond" {
-  value = var.l[1]
+  value = var.b[1]
 }
 
 #map variable
