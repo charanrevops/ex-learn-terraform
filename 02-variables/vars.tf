@@ -50,7 +50,7 @@ output "env" {
   value = var.env
 }
 
-varible "url" {}
+variable "url" {}
 output "url" {
   value=var.url
 }
