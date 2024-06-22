@@ -29,7 +29,7 @@ output "lsecond" {
 
 #map variable
 variable "map"{
-  deafult={
+  default={
     course= "Devops"
     trainer="john"
   }
