@@ -8,5 +8,5 @@ output "apple" {
 }
 
 output "banana" {
-  value="apple quantity is ${var.fruits["banana"]["quantity"]}, price is ${var.fruits["banana"]["price"]}"
+  value="apple quantity is ${var.fruits["banana"]["quantity"]}, price is ${lookup(var.fruits["banana"],"price",9}"
 }
