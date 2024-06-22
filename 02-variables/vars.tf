@@ -47,5 +47,5 @@ output "youtube_value_is_in_billion"{
 
 variable "env" {}
 output "env" {
-  value = "var.env"
+  value = var.env
 }
