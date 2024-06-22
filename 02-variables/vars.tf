@@ -44,3 +44,8 @@ output "youtube_value_is_in_billion"{
   value = var.y
 
 }
+
+variable "env" {}
+output "env" {
+  value = "var.env"
+}
