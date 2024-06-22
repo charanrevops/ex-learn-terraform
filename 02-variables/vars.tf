@@ -1,9 +1,9 @@
-variable "x" {
+variable "xam" {
   default = 10
 }
 
 output "x" {
-  value = var.x
+  value = var.xam
 }
 
 #List variable
