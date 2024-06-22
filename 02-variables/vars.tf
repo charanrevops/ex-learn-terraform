@@ -23,6 +23,6 @@ output "l" {
 
 #second value in list
 
-output "second num" {
+output "l3" {
   value = var.l[1]
 }
