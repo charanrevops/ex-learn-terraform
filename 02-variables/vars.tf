@@ -26,3 +26,15 @@ output "l" {
 output "lsecond" {
   value = var.l[1]
 }
+
+#map variable
+variable "map"{
+  deafult={
+    course= "Devops"
+    trainer="john"
+  }
+}
+
+output "course_name" {
+  value == var.map["course"]
+}
