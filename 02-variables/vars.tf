@@ -36,5 +36,5 @@ variable "map"{
 }
 
 output "course_name" {
-  value == var.map["course"]
+  value = var.map["course"]
 }
