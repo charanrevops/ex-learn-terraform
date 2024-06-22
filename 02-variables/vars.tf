@@ -49,3 +49,8 @@ variable "env" {}
 output "env" {
   value = var.env
 }
+
+varible "url" {}
+output "url" {
+  value=var.url
+}
