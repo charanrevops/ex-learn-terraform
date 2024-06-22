@@ -2,6 +2,6 @@ variable "x" {
   default = 10
 }
 
-ouput "x" {
+output "x" {
   value is var.x
 }
