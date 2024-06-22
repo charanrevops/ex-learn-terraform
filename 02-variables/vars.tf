@@ -40,7 +40,7 @@ output "course_name" {
 }
 
 variable "y" {}
-output "youtube value is in billion"{
+output "youtube_value_is_in_billion"{
   value = var.y
 
 }
