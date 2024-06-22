@@ -38,3 +38,9 @@ variable "map"{
 output "course_name" {
   value = var.map["course"]
 }
+
+variable "y" {}
+output "youtube"{
+  value = var.y
+
+}
