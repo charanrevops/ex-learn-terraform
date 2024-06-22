@@ -9,7 +9,7 @@ output "x" {
 #List variable
 
 
-variable "l" {
+variable "b" {
   default=[
   10,
   "hello",
@@ -18,7 +18,7 @@ variable "l" {
 }
 
 output "l" {
-  value=var.l
+  value=var.b
 }
 
 #second value in list
