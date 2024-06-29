@@ -1,6 +1,6 @@
 resource "aws_instance" "ec2-nodes" {
   count         = length(var.components)
-  ami           = "ami-041e2ea9402c46c32"
+  ami           = "ami-031d574cddc5bb371"
   instance_type = "t2.micro"
   vpc_security_group_ids =  ["sg-076b871708f2b2227"]
 
