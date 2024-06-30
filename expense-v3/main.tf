@@ -23,3 +23,5 @@ variable "components" {
   }
 }
 
+# In the above input key is frontend, value is { instance_type = "t3.small" }
+#Since it is been called by for_each, each prefix is needed like each.key and each.value
