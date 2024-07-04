@@ -7,19 +7,10 @@ resource "aws_instance" "node" {
     Name = var.name
   }
 
-  connection {
-    type     = "ssh"
-    user     = "root"
-    password = var.root_password
-    host     = self.public_ip
+  provisioner "local-exec" {
+    command = "sleep 120; cd /home/ec2-user/expense-ansible; ansible-playbook -i ${self.private_ip}-dev.charanrdevops.online, -e ansible_user=ec2-user -e ansible_password=DevOps321 -e role_name=${var.name} -e env=dev expense.yml"
   }
-
-  provisioner "remote-exec" {
-    inline = [
-      "puppet apply",
-      "consul join ${aws_instance.web.private_ip}",
-    ]
-  }
+}
 }
 
 
