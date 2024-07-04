@@ -20,4 +20,3 @@ variable "components" {
     }
   }
 }
-
