@@ -6,7 +6,24 @@ resource "aws_instance" "node" {
   tags = {
     Name = var.name
   }
+
+  connection {
+    type     = "ssh"
+    user     = "root"
+    password = var.root_password
+    host     = self.public_ip
+  }
+
+  provisioner "remote-exec" {
+    inline = [
+      "puppet apply",
+      "consul join ${aws_instance.web.private_ip}",
+    ]
+  }
 }
+
+
+
 
 
 resource "aws_route53_record" "record" {
