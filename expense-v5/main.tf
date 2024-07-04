@@ -1,7 +1,7 @@
 module "app"{
   for_each = var.components
   source="./app"
-  ami   = data.aws_ami.image_id
+  ami   = data.aws_ami.ami.image_id
   instance_type =each.value["instance_type"]
   name = each.key
   vpc_security_group_ids = [data.aws_security_group.allow-all.id]
